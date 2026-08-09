@@ -13,19 +13,26 @@
 
 <body>
 
-    <h1>MicroTool Labs  🧪</h1>
+    <h1>MicroTool Labs 🧪</h1>
 
     <p>Pequenas ferramentas para problemas reais.</p>
 
-    <p>Em construção... 🙌🏻 🧪</p>
-    <button onclick="mostrarMensagem()">Clique aqui</button>
+    <h2>Meu primeiro cálculo com JavaScript</h2>
 
-    <p id="mensagem"></p>
+    <input type="number" id="numero" placeholder="Digite um número">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+
     <script>
-    function mostrarMensagem() {
-        document.getElementById("mensagem").textContent =
-            "Aprendendo javascript! 🎉";
-    }
+        function calcular() {
+            const numero = document.getElementById("numero").value;
+            const resultado = numero * 2;
+
+            document.getElementById("resultado").textContent =
+                "O dobro é: " + resultado;
+        }
     </script>
 
 </body>
