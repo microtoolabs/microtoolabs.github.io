@@ -13,27 +13,37 @@
 
 <body>
 
-    <h1>MicroTool Labs 🧪</h1>
+   <h1>MicroTool Labs 🧪</h1>
 
-    <p>Pequenas ferramentas para problemas reais.</p>
+<p>Pequenas ferramentas para problemas reais.</p>
 
-    <h2>Meu primeiro cálculo com JavaScript</h2>
+<h2>Calculadora de área</h2>
 
-    <input type="number" id="numero" placeholder="Digite um número">
+<label for="largura">Largura da parede (m):</label>
+<input type="number" id="largura" step="0.01">
 
-    <button onclick="calcular()">Calcular</button>
+<br><br>
 
-    <p id="resultado"></p>
+<label for="altura">Altura da parede (m):</label>
+<input type="number" id="altura" step="0.01">
 
-    <script>
-        function calcular() {
-            const numero = document.getElementById("numero").value;
-            const resultado = numero * 2;
+<br><br>
 
-            document.getElementById("resultado").textContent =
-                "O dobro é: " + resultado;
-        }
-    </script>
+<button onclick="calcularArea()">Calcular área</button>
+
+<p id="resultado"></p>
+
+<script>
+    function calcularArea() {
+        const largura = document.getElementById("largura").value;
+        const altura = document.getElementById("altura").value;
+
+        const area = largura * altura;
+
+        document.getElementById("resultado").textContent =
+            "Área da parede: " + area + " m²";
+    }
+</script>
 
 </body>
 </html>
