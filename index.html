@@ -38,7 +38,7 @@
         const largura = document.getElementById("largura").value;
         const altura = document.getElementById("altura").value;
 
-        const area = largura * altura;
+        const area = (largura * altura).toFixed(2);
 
         document.getElementById("resultado").textContent =
             "Área da parede: " + area + " m²";
