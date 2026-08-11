@@ -27,3 +27,17 @@ addIncluded.addEventListener("click", function() {
     includedItems.appendChild(newItem);
 
 });
+
+addNotIncluded.addEventListener("click", function() {
+
+    const newItem = document.createElement("input");
+
+    newItem.type = "text";
+    newItem.placeholder = "Describe an excluded item";
+
+    notIncludedItems.appendChild(newItem);
+
+});
+
+
+
