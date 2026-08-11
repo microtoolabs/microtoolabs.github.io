@@ -5,7 +5,7 @@ form.addEventListener("submit", function(event) {
 
     const customer = document.querySelector("#customer").value;
 
-   const message = document.querySelector("#message");
+    const message = document.querySelector("#message");
 
-message.textContent = "Cliente: " + customer;
+    message.textContent = "Cliente: " + customer;
 });
