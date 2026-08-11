@@ -3,6 +3,7 @@ const scopeSection = document.querySelector("#scopeSection");
 const backButton = document.querySelector("#backButton");
 const includedItems = document.querySelector("#includedItems");
 const addIncluded = document.querySelector("#addIncluded");
+const newItem = ...
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
