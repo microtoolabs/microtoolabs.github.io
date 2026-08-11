@@ -5,8 +5,6 @@ const backButton = document.querySelector("#backButton");
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const customer = document.querySelector("#customer").value;
-
     basicForm.style.display = "none";
     scopeSection.style.display = "block";
 });
