@@ -1,6 +1,8 @@
-const form = document.querySelector("form");
+const basicForm = document.querySelector("form");
 
-form.addEventListener("submit", function(event) {
+const scopeSection = document.querySelector("#scopeSection");
+
+basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const customer = document.querySelector("#customer").value;
@@ -8,4 +10,7 @@ form.addEventListener("submit", function(event) {
     const message = document.querySelector("#message");
 
     message.textContent = "Cliente: " + customer;
+
+    basicForm.style.display = "none";
+    scopeSection.style.display = "block";
 });
