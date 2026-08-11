@@ -4,7 +4,8 @@ const backButton = document.querySelector("#backButton");
 const includedItems = document.querySelector("#includedItems");
 const addIncluded = document.querySelector("#addIncluded");
 const newItem = ...
-const notIncludedItems = document.querySelector("#notIncludedItems");    
+const notIncludedItems = document.querySelector("#notIncludedItems");
+const addNotIncluded = document.querySelector("#addNotIncluded");
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
