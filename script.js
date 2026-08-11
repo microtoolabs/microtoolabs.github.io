@@ -3,5 +3,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    alert("O botão funcionou! 🎉");
+    const customer = document.querySelector("#customer").value;
+
+    alert("Cliente: " + customer);
 });
