@@ -3,7 +3,6 @@ const scopeSection = document.querySelector("#scopeSection");
 const backButton = document.querySelector("#backButton");
 const includedItems = document.querySelector("#includedItems");
 const addIncluded = document.querySelector("#addIncluded");
-const newItem = ...
 const notIncludedItems = document.querySelector("#notIncludedItems");
 const addNotIncluded = document.querySelector("#addNotIncluded");
 
