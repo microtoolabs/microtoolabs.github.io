@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MicroTool Labs</title>
-    <style>
-    body {
-        text-align: center;
-    }
-    </style>
+
+    <title>MicroTool Labs - Quick Quote</title>
 </head>
 
 <body>
 
-   <h1>MicroTool Labs 🧪</h1>
+    <h1>Quick Quote</h1>
 
-<p>Pequenas ferramentas para problemas reais.</p>
+    <p>Create a professional quote step by step.</p>
 
-<h2>Calculadora de área</h2>
+    <h2>Basic Information</h2>
 
-<label for="largura">Largura da parede (m):</label>
-<input type="number" id="largura" step="0.01">
+    <form>
 
-<br><br>
+        <label for="customer">Customer</label>
+        <input type="text" id="customer">
 
-<label for="altura">Altura da parede (m):</label>
-<input type="number" id="altura" step="0.01">
+        <label for="project">Project / Job</label>
+        <input type="text" id="project">
 
-<br><br>
+        <label for="date">Date</label>
+        <input type="date" id="date">
 
-<button onclick="calcularArea()">Calcular área</button>
+        <label for="validUntil">Valid until</label>
+        <input type="date" id="validUntil">
 
+        <button type="submit">Next</button>
+
+    </form>
+
+</body>
+
+</html>
 <p id="resultado"></p>
 
 <script>
