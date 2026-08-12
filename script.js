@@ -42,5 +42,13 @@ function addItem(container, placeholderText) {
     });
 }
 
+addIncluded.addEventListener("click", function() {
+    addItem(includedItems, "Describe an included item");
+});
+
+addNotIncluded.addEventListener("click", function() {
+    addItem(notIncludedItems, "Describe an excluded item");
+});
+
 
 
