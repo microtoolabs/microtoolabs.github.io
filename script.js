@@ -18,27 +18,29 @@ backButton.addEventListener("click", function() {
     basicForm.style.display = "block";
 });
 
-addIncluded.addEventListener("click", function() {
+function addItem(container, placeholderText) {
+
+    const itemContainer = document.createElement("div");
 
     const newItem = document.createElement("input");
 
-    newItem.type = "text";
-    newItem.placeholder = "Describe an included item";
-
-    includedItems.appendChild(newItem);
-
-});
-
-addNotIncluded.addEventListener("click", function() {
-
-    const newItem = document.createElement("input");
+    const removeButton = document.createElement("button");
 
     newItem.type = "text";
-    newItem.placeholder = "Describe an excluded item";
+    newItem.placeholder = placeholderText;
 
-    notIncludedItems.appendChild(newItem);
+    removeButton.type = "button";
+    removeButton.textContent = "Remove";
 
-});
+    itemContainer.appendChild(newItem);
+    itemContainer.appendChild(removeButton);
+
+    container.appendChild(itemContainer);
+
+    removeButton.addEventListener("click", function() {
+        itemContainer.remove();
+    });
+}
 
 
 
