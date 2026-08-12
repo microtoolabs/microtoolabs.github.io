@@ -5,6 +5,9 @@ const includedItems = document.querySelector("#includedItems");
 const addIncluded = document.querySelector("#addIncluded");
 const notIncludedItems = document.querySelector("#notIncludedItems");
 const addNotIncluded = document.querySelector("#addNotIncluded");
+const itemContainer = document.createElement("div");
+const newItem = document.createElement("input");
+const removeButton = document.createElement("button");
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
