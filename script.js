@@ -66,8 +66,14 @@ function showIncludedItems() {
 const includedList = [];
 
 includedItems.querySelectorAll("input").forEach(function(item) {
-    includedList.push(item.value);
+
+    if (item.value !== "") {
+        includedList.push(item.value);
+    }
+
 });
+
+console.log(includedList);
 
 
 
