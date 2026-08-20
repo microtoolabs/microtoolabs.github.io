@@ -63,5 +63,11 @@ function showIncludedItems() {
 
 }
 
+const includedList = [];
+
+includedItems.querySelectorAll("input").forEach(function(item) {
+    includedList.push(item.value);
+});
+
 
 
