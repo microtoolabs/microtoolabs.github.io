@@ -9,6 +9,7 @@ const itemContainer = document.createElement("div");
 const newItem = document.createElement("input");
 const removeButton = document.createElement("button");
 const nextButton = document.querySelector("#nextButton");
+const quoteData = {};
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -27,8 +28,10 @@ nextButton.addEventListener("click", function() {
     const includedList = getItems(includedItems);
     const notIncludedList = getItems(notIncludedItems);
 
-    console.log(includedList);
-    console.log(notIncludedList);
+    quoteData.includedItems = includedList;
+    quoteData.notIncludedItems = notIncludedList;
+
+    console.log(quoteData);
 
 });
 
