@@ -27,6 +27,9 @@ nextButton.addEventListener("click", function() {
     const includedList = getItems(includedItems);
     const notIncludedList = getItems(notIncludedItems);
 
+    console.log(includedList);
+    console.log(notIncludedList);
+
 });
 
 function addItem(container, placeholderText) {
