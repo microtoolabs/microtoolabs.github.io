@@ -24,7 +24,8 @@ backButton.addEventListener("click", function() {
 
 nextButton.addEventListener("click", function() {
 
-    // aqui vamos trabalhar com os dados
+    const includedList = getItems(includedItems);
+    const notIncludedList = getItems(notIncludedItems);
 
 });
 
