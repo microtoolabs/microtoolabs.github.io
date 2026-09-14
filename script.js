@@ -53,6 +53,24 @@ addNotIncluded.addEventListener("click", function() {
     addItem(notIncludedItems, "Describe an excluded item");
 });
 
+function getItems(container) {
+
+    const items = container.querySelectorAll("input");
+
+    const list = [];
+
+    items.forEach(function(item) {
+
+        if (item.value !== "") {
+            list.push(item.value);
+        }
+
+    });
+
+    return list;
+}
+
+
 function showIncludedItems() {
 
     const items = includedItems.querySelectorAll("input");
