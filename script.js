@@ -8,6 +8,7 @@ const addNotIncluded = document.querySelector("#addNotIncluded");
 const itemContainer = document.createElement("div");
 const newItem = document.createElement("input");
 const removeButton = document.createElement("button");
+const nextButton = document.querySelector("#nextButton");
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -19,6 +20,12 @@ basicForm.addEventListener("submit", function(event) {
 backButton.addEventListener("click", function() {
     scopeSection.style.display = "none";
     basicForm.style.display = "block";
+});
+
+nextButton.addEventListener("click", function() {
+
+    // aqui vamos trabalhar com os dados
+
 });
 
 function addItem(container, placeholderText) {
