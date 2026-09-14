@@ -105,6 +105,7 @@ includedItems.querySelectorAll("input").forEach(function(item) {
 
 });
 
+
 console.log(includedList);
 
 
