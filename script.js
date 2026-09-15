@@ -29,7 +29,9 @@ backButton.addEventListener("click", function() {
 });
 
 nextButton.addEventListener("click", function() {
-
+    
+    console.log("NEXT 2 clicado");
+    
     const includedList = getItems(includedItems);
     const notIncludedList = getItems(notIncludedItems);
 
