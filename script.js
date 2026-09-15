@@ -50,6 +50,8 @@ nextButton.addEventListener("click", function() {
 
     quoteData.includedItems.forEach(function(item) {
 
+    const listItem = document.createElement("li");
+
 });
 
     scopeSection.style.display = "none";
