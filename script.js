@@ -16,6 +16,7 @@ const dateInput = document.querySelector("#date");
 const validUntilInput = document.querySelector("#validUntil");
 const previewSection = document.querySelector("#previewSection");
 const previewCustomer = document.querySelector("#previewCustomer");
+const previewProject = document.querySelector("#previewProject");
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -47,6 +48,7 @@ nextButton.addEventListener("click", function() {
     previewSection.style.display = "block"
 
     previewCustomer.textContent = quoteData.customer;
+    previewProject.textContent = quoteData.project;
 
     console.log(quoteData);
 
