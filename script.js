@@ -15,6 +15,7 @@ const projectInput = document.querySelector("#project");
 const dateInput = document.querySelector("#date");
 const validUntilInput = document.querySelector("#validUntil");
 const previewSection = document.querySelector("#previewSection");
+const previewCustomer = document.querySelector("#previewCustomer");
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
