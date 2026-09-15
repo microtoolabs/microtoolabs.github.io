@@ -50,7 +50,9 @@ nextButton.addEventListener("click", function() {
 
     quoteData.includedItems.forEach(function(item) {
 
-    const listItem = document.createElement("li");
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+
 
 });
 
