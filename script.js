@@ -18,7 +18,8 @@ const previewSection = document.querySelector("#previewSection");
 const previewCustomer = document.querySelector("#previewCustomer");
 const previewProject = document.querySelector("#previewProject");
 const previewDate = document.querySelector("#previewDate");
-const previewValidUntil = document.querySelector("#previewValidUntil");  
+const previewValidUntil = document.querySelector("#previewValidUntil");
+const previewIncludedItems = document.querySelector("#previewIncludedItems");
     
 
 basicForm.addEventListener("submit", function(event) {
@@ -46,6 +47,10 @@ nextButton.addEventListener("click", function() {
     quoteData.project = projectInput.value;
     quoteData.date = dateInput.value;
     quoteData.validUntil = validUntilInput.value;
+
+    quoteData.includedItems.forEach(function(item) {
+
+});
 
     scopeSection.style.display = "none";
     previewSection.style.display = "block"
