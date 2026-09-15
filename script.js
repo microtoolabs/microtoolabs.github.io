@@ -40,6 +40,9 @@ nextButton.addEventListener("click", function() {
     quoteData.date = dateInput.value;
     quoteData.validUntil = validUntilInput.value;
 
+    scopeSection.style.display = "none";
+    previewSection.style.display = "block"
+
     console.log(quoteData);
 
 });
