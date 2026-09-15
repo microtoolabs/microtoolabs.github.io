@@ -10,6 +10,10 @@ const newItem = document.createElement("input");
 const removeButton = document.createElement("button");
 const nextButton = document.querySelector("#nextButton");
 const quoteData = {};
+const customerInput = document.querySelector("#customer");
+const projectInput = document.querySelector("#project");
+const dateInput = document.querySelector("#date");
+const validUntilInput = document.querySelector("#validUntil");
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
