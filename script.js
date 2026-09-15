@@ -17,6 +17,9 @@ const validUntilInput = document.querySelector("#validUntil");
 const previewSection = document.querySelector("#previewSection");
 const previewCustomer = document.querySelector("#previewCustomer");
 const previewProject = document.querySelector("#previewProject");
+const previewDate = document.querySelector("#previewDate");
+const previewValidUntil =  document.querySelector("#previewValidUntil");  
+    
 
 basicForm.addEventListener("submit", function(event) {
     event.preventDefault();
