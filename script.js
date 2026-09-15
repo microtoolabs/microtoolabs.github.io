@@ -34,6 +34,10 @@ nextButton.addEventListener("click", function() {
 
     quoteData.includedItems = includedList;
     quoteData.notIncludedItems = notIncludedList;
+    quoteData.customer = customerInput.value;
+    quoteData.project = projectInput.value;
+    quoteData.date = dateInput.value;
+    quoteData.validUntil = validUntilInput.value;
 
     console.log(quoteData);
 
