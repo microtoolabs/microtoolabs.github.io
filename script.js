@@ -46,6 +46,8 @@ nextButton.addEventListener("click", function() {
     scopeSection.style.display = "none";
     previewSection.style.display = "block"
 
+    previewCustomer.textContent = quoteData.customer;
+
     console.log(quoteData);
 
 });
