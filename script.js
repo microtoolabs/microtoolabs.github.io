@@ -95,18 +95,4 @@ function showIncludedItems() {
 
 }
 
-const includedList = [];
-
-includedItems.querySelectorAll("input").forEach(function(item) {
-
-    if (item.value !== "") {
-        includedList.push(item.value);
-    }
-
-});
-
-
-console.log(includedList);
-
-
 
